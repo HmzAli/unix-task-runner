@@ -4,7 +4,7 @@ Schedules and runs any script-based tasks. As an example, using this to clear my
 
 #### Notes:
 
-* To add tasks to `
+* To add task definition to `tasks.json`
 
 * To following cron definition to your system (executes every 1 minute):
 ```
