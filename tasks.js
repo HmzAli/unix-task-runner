@@ -3,7 +3,7 @@ import { writeJsonFile } from 'write-json-file';
 import { exec } from 'child_process';
 import parser from 'cron-parser';
 
-const tasksFileName = 'tasks.json';
+const tasksFilePath = process.argv.slice(2)[1];
 
 start();
 
@@ -19,7 +19,7 @@ async function start() {
 }
 
 async function getTasks() {
-    return await loadJsonFile(tasksFileName);
+    return await loadJsonFile(tasksFilePath);
 }
 
 async function getPendingTasks(tasks) {
@@ -83,7 +83,7 @@ async function saveTasks(savedTasks, executedTasks) {
         return task;
     });
 
-    return await writeJsonFile(tasksFileName, tasksToSave);
+    return await writeJsonFile(tasksFilePath, tasksToSave);
 }
 
 function getCurrentDate () {
