@@ -2,8 +2,8 @@
 	{
 		"id": 1,
 		"name": "DrawerJS",
-		"scriptPath": "/Users/hamzaali/drawer.js",
-		"interpreterPath": "/Users/hamzaali/.nvm/versions/node/v16.10.0/bin/node",
+		"scriptPath": "/Users/myname/drawer.js",
+		"interpreterPath": "/Users/myname/.nvm/versions/node/v16.10.0/bin/node",
 		"scheduleCron": "45 17 * * 5",
 		"nextRunDate": 1662111900
 	}
